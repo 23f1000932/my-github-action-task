@@ -1,0 +1,17 @@
+# A simple workflow name
+name: IITM DS Assignment Workflow
+
+# This trigger means the action will run on every push to the main branch
+on: [push]
+
+# Defines the jobs to run
+jobs:
+  test:
+    # The type of virtual machine to run the job on
+    runs-on: ubuntu-latest
+
+    # The sequence of tasks to be executed
+    steps:
+      # This is the crucial step. The 'name' must match your email exactly.
+      - name: 23F1000932@ds.study.iitm.ac.in
+        run: echo "Hello, world! This step is named with my email."
